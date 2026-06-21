@@ -1,0 +1,14 @@
+/* External Styling (Best ✅) */
+/* External styling means writing CSS in a separate file (.css)
+and linking it to your HTML fil */
+.title {              /* -- CCS class */
+            color: red;
+            font-size: 20px;
+        }
+        .importent-info{
+            text-decoration: underline;
+        }
+        #logo{                 /*.. Id styling ..*/
+            color: green;
+            font-size: 2em;
+        }
