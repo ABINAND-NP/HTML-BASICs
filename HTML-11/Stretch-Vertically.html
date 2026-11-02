@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+        .container{
+            height: 100vh;
+            border-color: rgb(163, 107, 22);
+            display: flex;
+            flex-direction: column;
+
+        }
+        header{
+            height: 10vh;
+            background-color: gray;
+        }
+        nav{
+            height: 10vh;
+            background-color: aqua;
+        }
+        .content{
+           flex: 1;   
+           display: flex;           
+           background-color: green;           
+           /* flex-direction: row; */
+           flex-wrap: wrap;       /*-- item central aline intuvigualy --*/ 
+           align-items: flex-start;  /*-- default --        
+           /* align-items: flex-end;        */
+           /* align-items: center;    */
+           /* align-content: flex-start; */
+           /* align-content: flex-end; */
+           /* align-content: center; */
+           /* align-content: stretch;           */
+
+        }
+        .box{
+            /* height: 200px;  */
+            min-height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+            margin: 5px;
+        }
+        footer{
+            height: 10vh;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <div class="content">
+        <div class="box">1</div>
+        <div class="box" >2</div>   <!--style="align-self: flex-start;" , -->
+        <div class="box">3 The environment refers to everything that is around us,
+             including the air we breathe, the water we d... Read more at: 
+             https://school.careers360.com/environmental-protection-essay-essy For example, when we produce greenhouse gases, this contributes to climate change. Climate change ha... Read more at: https://school.careers360.com/environmental-protection-essay-essy</div>    <!--style="align-self: flex-end;" , -->
+        <div class="box">4</div>  
+        
+
+    </div>
+    <footer>
+
+    </footer>
+    
+    </div>
+    
+</body>
+</html>
